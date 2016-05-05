@@ -1,8 +1,14 @@
 PasswordMetrics
 ===============
-This repository currently contains Python code for permuting randomly-generated passwords for easier entry on mobile devices.
+This repository currently contains Python code for permuting randomly-generated passwords for easier entry on mobile devices. 
 
 The permutation categorizes the characters of a password into four sets: uppercase (U), lowercase (L), numbers (N), and symbols (S). The rearranged password is then created by concatenating each set in the order U + L + N + S. By grouping character classes (i.e., uppercase, lowercase, numbers, symbols) together in this way, it minimizes the total number of keystrokes required for entry on mobile devices. 
+
+This repository also contains code for three experiments on entropy loss:
+a.  The "fan-out":  How many different random passwords would we expect to be able to map down to the same user-friendly password as this one?
+b.  The entropy loss in bits.
+c.  How many randomly-generated lowercase characters would need to be added to get back at least the same amount of entropy that was lost.  
+
 
 Disclaimer:
 “The United States Department of Commerce (DOC) GitHub project code is provided on an ‘as is’ basis and the user assumes responsibility for its use. DOC has relinquished control of the information and no longer has responsibility to protect the integrity, confidentiality, or availability of the information. Any claims against the Department of Commerce stemming from the use of its GitHub project will be ￼￼￼￼￼￼￼￼ governed by all applicable Federal law.Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by the Department of Commerce. The Department of Commerce seal and logo, or the seal and logo of a DOC bureau, shall not be used in any manner to imply endorsement of any commercial product or activity by DOC or the United States Government.”
